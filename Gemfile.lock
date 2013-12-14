@@ -69,6 +69,7 @@ GEM
     neat (1.5.0)
       bourbon (>= 2.1)
       sass (>= 3.2)
+    pg (0.17.0)
     polyglot (0.3.3)
     rack (1.5.2)
     rack-test (0.6.2)
@@ -136,6 +137,7 @@ DEPENDENCIES
   jquery-ui-rails
   less-rails
   neat
+  pg
   rails (= 4.0.1)
   sass-rails (~> 4.0.0)
   sdoc
