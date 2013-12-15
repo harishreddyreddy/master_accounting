@@ -30,6 +30,7 @@ gem 'neat'
 gem 'jquery-ui-rails'
 gem 'therubyracer'
 gem 'less-rails'
+gem 'appsignal'
 
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.
