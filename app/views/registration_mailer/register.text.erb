@@ -1,0 +1,14 @@
+New Registration
+
+Name: <%= @registraion_details[:name] %>
+
+Email: <%= @registraion_details[:email] %>
+
+Promocode: <%= @registraion_details[:promocode] %>
+
+Mobile: <%= @registraion_details[:mobile] %>
+
+Courses:
+<% @registraion_details[:courses].each do |course| %>
+  <%= course.humanize %>
+<% end %>

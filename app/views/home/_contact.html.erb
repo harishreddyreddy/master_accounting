@@ -1,0 +1,76 @@
+<section id="contact">
+
+  <div class="row section-head">
+    <div class="col full">
+      <h2>Contact Us</h2>
+
+      <p class="desc">Get in touch with us.</p>
+    </div>
+  </div>
+
+  <div class="row">
+
+    <div class="col g-7">
+
+      <!-- form -->
+      <%= form_tag('contact', method: :post)%>
+        <fieldset>
+
+          <div>
+            <%= label_tag(:name, "Name") %>
+            <%= text_field_tag(:name, nil, :required => true) %>
+          </div>
+
+          <div>
+            <%= label_tag(:email, "Email") %>
+            <%= email_field_tag(:email, nil, :required => true) %>
+          </div>
+
+          <div>
+            <%= label_tag(:message, "Message") %>
+            <%= text_area_tag(:message, nil, rows: 10, cols: 50) %>
+          </div>
+
+          <div>
+            <button class="submit">Submit</button>
+             <span id="image-loader">
+                <img src="assets/loader.gif" alt=""/>
+             </span>
+          </div>
+
+        </fieldset>
+      </form>
+      <!-- Form End -->
+
+      <!-- contact-warning -->
+      <div id="message-warning"></div>
+      <!-- contact-success -->
+      <div id="message-success">
+        <i class="icon-ok"></i>Your message was sent, thank you!<br/>
+      </div>
+
+    </div>
+
+
+    <aside class="col g-5">
+
+      <h3>Contact Information</h3>
+
+      <p>Our offices operate in normal working hours.</p>
+
+      <p>
+        Master Accounting <br/>
+        121 Lansdowne Street <br/>
+        Parramatta, NSW 2150
+      </p>
+
+      <p>
+        Phone: 0 123 456 789 0 <br/>
+        Email: info [@] masteraccounting.com
+      </p><br/>
+
+    </aside>
+
+  </div>
+
+</section>

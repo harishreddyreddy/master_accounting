@@ -1,0 +1,76 @@
+<section id="intro">
+
+     <!-- Flexslider Start-->
+   <div id="intro-slider" class="flexslider">
+
+	   <ul class="slides">
+
+        <% if flash[:message] %>
+          <li>
+            <div class="row">
+              <div class="col full">
+                <div class="slider-text">
+                  <h2><%= flash[:message] %></h2>
+                </div>
+              </div>
+            </div>
+          </li>
+
+          <li>
+            <div class="row">
+              <div class="col full">
+                <div class="slider-text">
+                  <h2><span><%= flash[:message] %></span></h2>
+                </div>
+              </div>
+            </div>
+          </li>
+        <% else %>
+          <!-- Slide -->
+          <li>
+            <div class="row">
+              <div class="col full">
+                <div class="slider-text">
+                  <h2>Welcome to <span>Master Accounting</span>. We specialize in CPA professional training.</h2>
+                  <p>Affordable training by highly qualified accountants with years of local and international
+                    experience.</p>
+                </div>
+              </div>
+            </div>
+          </li>
+
+          <!-- Slide -->
+          <li>
+            <div class="row">
+              <div class="col full">
+                <div class="slider-text">
+                  <h2>Take a look at some of <a href="#courses" title="">our courses</a> and
+                    <a href="#register" title="">register today.</a></h2>
+
+                  <p>Our trainers are awarded CPA certificate of Merits in various courses. Get in touch if you need
+                    more information or if you have any questions.</p>
+                </div>
+              </div>
+            </div>
+          </li>
+
+          <!-- Slide -->
+          <li>
+            <div class="row">
+              <div class="col full">
+                <div class="slider-text">
+                  <h2>Register online NOW to get <a href="#register" title="">$50 credit</a>. </h2>
+
+                  <p>Early bird discount: Register by 15th Jan to get $100 discount, register by 15th Feb $50
+                    discount</p>
+                </div>
+              </div>
+            </div>
+          </li>
+
+          </ul>
+          </div>
+        <% end %>
+   <!-- Flexslider End-->
+
+  </section>

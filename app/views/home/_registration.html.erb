@@ -1,0 +1,69 @@
+<section id="register">
+
+   <div class="row section-head">
+      <div class="col full">
+
+         <h2>Register</h2>
+         <p class="desc">Fast, easy and simple registration process. Just fill in your details and press submit.</p>
+
+         <p class="intro">Once you register we will persoanlly contact you to finalise your registration.</p>
+
+      </div>
+   </div>
+  <div class="row">
+
+     <div class="col g-7">
+      <div><%= flash[:message] %></div>
+        <!-- form -->
+       <%= form_tag('register', method: :post)%>
+         <fieldset>
+
+           <div>
+             <%= label_tag(:name, "Name") %>
+             <%= text_field_tag(:name, nil, :required => true) %>
+           </div>
+           <div>
+             <%= label_tag(:email, "Email") %>
+             <%= email_field_tag(:email, nil, :required => true, :pattern => '[^@]+@[^@]+\.[a-zA-Z]{2,6}' ) %>
+           </div>
+           <div>
+             <%= label_tag(:mobile, "Mobile") %>
+             <%= phone_field_tag(:mobile, nil, :required => true) %>
+           </div>
+           <div>
+             <%= label_tag(:email, "Promocode") %>
+             <%= text_field_tag(:promocode) %>
+           </div>
+
+           <div>
+             <% courses = ['advance_audit_and_assurance', 'advanced_taxation',
+                           'ethics_and_governance', 'financial_reporting',
+                           'financial_risk_management', 'global_strategy_and_leadership',
+                           'strategic_management_accounting'] %>
+             <%= label_tag(:courses, "Course") %>
+             <ul>
+               <% courses.each do |course| %>
+                 <li>
+                   <%= check_box_tag('courses[]', course) %>
+                   <%= course.humanize %>
+                 </li>
+               <% end %>
+             </ul>
+           </div>
+
+           <div>
+             <button class="submit">Submit</button>
+                 <span id="image-loader">
+                    <img src="assets/loader.gif" alt=""/>
+                 </span>
+           </div>
+
+	</fieldset>
+</form> <!-- Form End -->
+
+
+     </div>
+
+  </div>
+
+</section>

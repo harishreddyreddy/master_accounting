@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta content='text/html; charset=UTF-8' http-equiv='Content-Type'/>
+  </head>
+  <body>
+    <h1>New Registration</h1>
+
+    <p>
+      Name: <%= @registraion_details[:name] %>
+      <br/>
+      Email: <%= @registraion_details[:email] %>
+      <br/>
+      Promocode: <%= @registraion_details[:promocode] %>
+      <br/>
+      Mobile: <%= @registraion_details[:mobile] %>
+      <br/>
+      Courses:
+      <% @registraion_details[:courses].each do | course | %>
+        <%= course.humanize %>
+      <% end %>
+    </p>
+
+    <p></p>
+  </body>
+</html>
