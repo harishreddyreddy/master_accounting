@@ -82,6 +82,7 @@ GEM
     neat (1.5.0)
       bourbon (>= 2.1)
       sass (>= 3.2)
+    newrelic_rpm (3.7.0.177)
     polyglot (0.3.3)
     pry (0.9.12.4)
       coderay (~> 1.0)
@@ -158,6 +159,7 @@ DEPENDENCIES
   jquery-ui-rails
   less-rails
   neat
+  newrelic_rpm
   pry
   pry-debugger
   rails (= 4.0.1)
