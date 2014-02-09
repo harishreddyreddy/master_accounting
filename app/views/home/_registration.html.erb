@@ -30,9 +30,15 @@
              <%= label_tag(:mobile, "Mobile") %>
              <%= phone_field_tag(:mobile, nil, :required => true) %>
            </div>
+
            <div>
-             <%= label_tag(:email, "How did you find us") %>
+             <%= label_tag(:email, "Promocode") %>
              <%= text_field_tag(:promocode) %>
+           </div>
+
+           <div>
+             <%= label_tag(:type, "Type of course") %>
+             <%= select_tag 'type', options_for_select(['In Class', 'Online']) %>
            </div>
 
            <div>
@@ -49,6 +55,16 @@
                  </li>
                <% end %>
              </ul>
+           </div>
+
+           <div>
+             <%= label_tag(:find_us, "How did you find us?") %>
+             <%= select_tag 'find', options_for_select(['Google', 'Print Media', 'English Social Media', 'Chinese Social Media', 'Flyers', 'Friends', 'Others']), prompt: 'Please select' %>
+           </div>
+
+           <div>
+             <%= label_tag(:fluency, "Which language are you fluent in?") %>
+             <%= text_field_tag(:fluency, nil, :required => true) %>
            </div>
 
            <div>
