@@ -30,7 +30,6 @@ gem 'neat'
 gem 'jquery-ui-rails'
 gem 'therubyracer'
 gem 'less-rails'
-gem 'appsignal'
 gem 'newrelic_rpm'
 
 group :doc do
